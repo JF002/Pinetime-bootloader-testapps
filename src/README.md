@@ -15,7 +15,7 @@ These applications simply configure a pin as output to light an LED and loop on 
 ## Generate signed image for MCUBoot
 
  - **First time only** Generate key : `<...>/mcuboot/scripts/imgtool.py keygen -k keys -t rsa-2048`
- - Create image : `/home/jf/nrf52/mcuboot/scripts/imgtool.py create --key keys  --header-size 0x200 --pad-header --align 1 --version 1.0 --slot-size 0x3000 pinetime-bootloader-testapp-a.hex signed_application_a.bin`
+ - Create image : `/home/jf/nrf52/mcuboot/scripts/imgtool.py create --key keys  --header-size 0x200 --pad-header --align 4 --version 1.0 --slot-size 0x3000 --pad pinetime-bootloader-testapp-a.hex signed_application_a.bin`
 
 ## How to flash (using JLinkExe)
 

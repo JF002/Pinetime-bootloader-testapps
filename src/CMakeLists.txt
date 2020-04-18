@@ -50,7 +50,8 @@ list(APPEND SOURCE_FILES
   segger_rtt/SEGGER_RTT_printf.c
 
   main.c
-
+  nrf52_nvmc.h
+  nrf52_nvmc.c
 )
 
 set(INCLUDE_FILES
